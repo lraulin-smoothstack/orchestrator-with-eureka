@@ -1,2 +1,11 @@
-com/smoothstack/december/orchestrationservice/controller/BorrowerController.class
+com/smoothstack/december/orchestrationservice/entity/Publisher.class
 com/smoothstack/december/orchestrationservice/OrchestrationServiceApplication.class
+com/smoothstack/december/orchestrationservice/entity/Genre.class
+com/smoothstack/december/orchestrationservice/entity/Borrower.class
+com/smoothstack/december/orchestrationservice/entity/BookCopy.class
+com/smoothstack/december/orchestrationservice/entity/LibraryBranch.class
+com/smoothstack/december/orchestrationservice/entity/BookLoan.class
+com/smoothstack/december/orchestrationservice/entity/Book.class
+com/smoothstack/december/orchestrationservice/controller/BorrowerController.class
+com/smoothstack/december/orchestrationservice/entity/Author.class
+com/smoothstack/december/orchestrationservice/controller/LibrarianController.class

@@ -1,2 +1,11 @@
-/Users/leeraulin/Projects/Smoothstack/orchestrator-microservice/src/main/java/com/smoothstack/december/orchestrationservice/OrchestrationServiceApplication.java
-/Users/leeraulin/Projects/Smoothstack/orchestrator-microservice/src/main/java/com/smoothstack/december/orchestrationservice/controller/BorrowerController.java
+/Users/leeraulin/Projects/Smoothstack/lma-ms-app/orchestrator-with-eureka/orchestrator/src/main/java/com/smoothstack/december/orchestrationservice/entity/Borrower.java
+/Users/leeraulin/Projects/Smoothstack/lma-ms-app/orchestrator-with-eureka/orchestrator/src/main/java/com/smoothstack/december/orchestrationservice/entity/Genre.java
+/Users/leeraulin/Projects/Smoothstack/lma-ms-app/orchestrator-with-eureka/orchestrator/src/main/java/com/smoothstack/december/orchestrationservice/entity/Author.java
+/Users/leeraulin/Projects/Smoothstack/lma-ms-app/orchestrator-with-eureka/orchestrator/src/main/java/com/smoothstack/december/orchestrationservice/entity/BookLoan.java
+/Users/leeraulin/Projects/Smoothstack/lma-ms-app/orchestrator-with-eureka/orchestrator/src/main/java/com/smoothstack/december/orchestrationservice/entity/BookCopy.java
+/Users/leeraulin/Projects/Smoothstack/lma-ms-app/orchestrator-with-eureka/orchestrator/src/main/java/com/smoothstack/december/orchestrationservice/controller/BorrowerController.java
+/Users/leeraulin/Projects/Smoothstack/lma-ms-app/orchestrator-with-eureka/orchestrator/src/main/java/com/smoothstack/december/orchestrationservice/entity/Publisher.java
+/Users/leeraulin/Projects/Smoothstack/lma-ms-app/orchestrator-with-eureka/orchestrator/src/main/java/com/smoothstack/december/orchestrationservice/entity/Book.java
+/Users/leeraulin/Projects/Smoothstack/lma-ms-app/orchestrator-with-eureka/orchestrator/src/main/java/com/smoothstack/december/orchestrationservice/entity/LibraryBranch.java
+/Users/leeraulin/Projects/Smoothstack/lma-ms-app/orchestrator-with-eureka/orchestrator/src/main/java/com/smoothstack/december/orchestrationservice/OrchestrationServiceApplication.java
+/Users/leeraulin/Projects/Smoothstack/lma-ms-app/orchestrator-with-eureka/orchestrator/src/main/java/com/smoothstack/december/orchestrationservice/controller/LibrarianController.java
