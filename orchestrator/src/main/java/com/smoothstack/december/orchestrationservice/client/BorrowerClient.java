@@ -1,4 +1,4 @@
-package com.smoothstack.december.orchestrationservice.controller;
+package com.smoothstack.december.orchestrationservice.client;
 
 import java.util.List;
 
