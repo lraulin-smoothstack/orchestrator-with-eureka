@@ -32,7 +32,7 @@ public class LibrarianController {
         BookCopy bookCopy = new BookCopy();
         bookCopy.setId(new BookCopyId(bookId, branchId));
         bookCopy.setAmount(amount);
-        this.restTemplate.put(this.baseUrl + "/bookCopies", bookCopy);
+        this.restTemplate.put(baseUrl + "/bookCopies", bookCopy);
     }
 
     @PostMapping("/bookCopies")

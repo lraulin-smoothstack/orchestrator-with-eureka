@@ -54,4 +54,13 @@ public class Role {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public Set<User> getUsers() {
+        return this.users;
+    }
+
+    public void setUsers(Set<User> users) {
+        this.users = users;
+    }
+
 }
