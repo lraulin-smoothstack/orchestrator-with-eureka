@@ -1,80 +1,104 @@
 package com.smoothstack.december.orchestrationservice.entity;
 
-import java.time.LocalDate;;
+import java.time.LocalDate;
+import java.util.Objects;;
 
 public class BookLoan {
-    
-    private int bookId;
-    private int branchId;
-    private int cardNumber;
+
+    public static class BookLoanId {
+
+        private Long bookId;
+        private Long borrowerId;
+        private Long branchId;
+
+        public BookLoanId() {
+        }
+
+        public BookLoanId(long bookId, long borrowerId, long branchId) {
+            this.bookId = bookId;
+            this.borrowerId = borrowerId;
+            this.branchId = branchId;
+        }
+
+        public Long getBookId() {
+            return this.bookId;
+        }
+
+        public void setBookId(Long bookId) {
+            this.bookId = bookId;
+        }
+
+        public Long getBorrowerId() {
+            return this.borrowerId;
+        }
+
+        public void setBorrowerId(Long borrowerId) {
+            this.borrowerId = borrowerId;
+        }
+
+        public Long getBranchId() {
+            return this.branchId;
+        }
+
+        public void setBranchId(Long branchId) {
+            this.branchId = branchId;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(this.bookId, this.borrowerId, this.branchId);
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (!(obj instanceof BookLoanId)) {
+                return false;
+            }
+            BookLoanId other = (BookLoanId) obj;
+            return Objects.equals(this.bookId, other.bookId) && Objects.equals(this.borrowerId, other.borrowerId)
+                    && Objects.equals(this.branchId, other.branchId);
+        }
+
+    }
+
+    private BookLoanId id;;
     private LocalDate dateOut;
     private LocalDate dueDate;
     private LocalDate dateIn;
-    private Borrower borrower;
-    private LibraryBranch branch;
-    
-    public int getBookId() {
-        return bookId;
+
+    public BookLoanId getId() {
+        return this.id;
     }
-    
-    public void setBookId(int bookId) {
-        this.bookId = bookId;
+
+    public void setId(BookLoanId id) {
+        this.id = id;
     }
-    
-    public int getBranchId() {
-        return branchId;
-    }
-    
-    public void setBranchId(int branchId) {
-        this.branchId = branchId;
-    }
-    
-    public int getCardNumber() {
-        return cardNumber;
-    }
-    
-    public void setCardNumber(int cardNumber) {
-        this.cardNumber = cardNumber;
-    }
-    
+
     public LocalDate getDateOut() {
-        return dateOut;
+        return this.dateOut;
     }
-    
+
     public void setDateOut(LocalDate dateOut) {
         this.dateOut = dateOut;
     }
-    
+
     public LocalDate getDueDate() {
-        return dueDate;
+        return this.dueDate;
     }
-    
+
     public void setDueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
-    
+
     public LocalDate getDateIn() {
-        return dateIn;
+        return this.dateIn;
     }
-    
+
     public void setDateIn(LocalDate dateIn) {
         this.dateIn = dateIn;
     }
-    
-    public Borrower getBorrower() {
-        return borrower;
-    }
-    
-    public void setBorrower(Borrower borrower) {
-        this.borrower = borrower;
-    }
-    
-    public LibraryBranch getBranch() {
-        return branch;
-    }
-    
-    public void setBranch(LibraryBranch branch) {
-        this.branch = branch;
-    }
-    
+
 }

@@ -1,34 +1,35 @@
 package com.smoothstack.december.orchestrationservice.entity;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Genre {
-    
-    private int genreId;
+
+    private Long id;
     private String name;
-    private List<Book> books;
-    
-    public int getGenreId() {
-        return genreId;
+    private Set<Book> books = new HashSet<>();
+
+    public Long getId() {
+        return this.id;
     }
-    
-    public void setGenreId(int genreId) {
-        this.genreId = genreId;
+
+    public void setId(Long id) {
+        this.id = id;
     }
-    
+
     public String getName() {
-        return name;
+        return this.name;
     }
-    
+
     public void setName(String name) {
         this.name = name;
     }
-    
-    public List<Book> getBooks() {
-        return books;
+
+    public Set<Book> getBooks() {
+        return this.books;
     }
-    
-    public void setBooks(List<Book> books) {
+
+    public void setBooks(Set<Book> books) {
         this.books = books;
     }
 

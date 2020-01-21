@@ -2,39 +2,39 @@ package com.smoothstack.december.orchestrationservice.entity;
 
 public class Borrower {
 
-    private int cardNumber;
+    private Long id;
     private String name;
     private String address;
     private String phoneNumber;
-    
-    public int getCardNumber() {
-        return cardNumber;
+
+    public Long getId() {
+        return this.id;
     }
-    
-    public void setCardNumber(int cardNumber) {
-        this.cardNumber = cardNumber;
+
+    public void setId(Long id) {
+        this.id = id;
     }
-    
+
     public String getName() {
-        return name;
+        return this.name;
     }
-    
+
     public void setName(String name) {
         this.name = name;
     }
-    
+
     public String getAddress() {
-        return address;
+        return this.address;
     }
-    
+
     public void setAddress(String address) {
         this.address = address;
     }
-    
+
     public String getPhoneNumber() {
-        return phoneNumber;
+        return this.phoneNumber;
     }
-    
+
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }

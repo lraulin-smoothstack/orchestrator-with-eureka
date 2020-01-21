@@ -1,53 +1,54 @@
 package com.smoothstack.december.orchestrationservice.entity;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Publisher {
-    
-    private int publisherId;
+
+    private Long id;
     private String name;
     private String address;
     private String phoneNumber;
-    private List<Book> books;
-    
-    public int getPublisherId() {
-        return publisherId;
+    private Set<Book> books = new HashSet<>();
+
+    public Long getId() {
+        return this.id;
     }
-    
-    public void setPublisherId(int publisherId) {
-        this.publisherId = publisherId;
+
+    public void setId(Long id) {
+        this.id = id;
     }
-    
+
     public String getName() {
-        return name;
+        return this.name;
     }
-    
+
     public void setName(String name) {
         this.name = name;
     }
-    
+
     public String getAddress() {
-        return address;
+        return this.address;
     }
-    
+
     public void setAddress(String address) {
         this.address = address;
     }
-    
+
     public String getPhoneNumber() {
-        return phoneNumber;
+        return this.phoneNumber;
     }
-    
+
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public List<Book> getBooks() {
-        return books;
+    public Set<Book> getBooks() {
+        return this.books;
     }
 
-    public void setBooks(List<Book> books) {
+    public void setBooks(Set<Book> books) {
         this.books = books;
     }
-    
+
 }

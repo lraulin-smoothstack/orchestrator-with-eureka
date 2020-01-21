@@ -1,53 +1,33 @@
 package com.smoothstack.december.orchestrationservice.entity;
 
-import java.util.List;
-
 public class LibraryBranch {
 
-    private int branchId;
+    private Long id;
     private String name;
     private String address;
-    private List<BookCopy> bookCopies;
-    private List<BookLoan> bookLoans;
-    
-    public int getBranchId() {
-        return branchId;
+
+    public Long getId() {
+        return this.id;
     }
-    
-    public void setBranchId(int branchId) {
-        this.branchId = branchId;
+
+    public void setId(Long id) {
+        this.id = id;
     }
-    
+
     public String getName() {
-        return name;
+        return this.name;
     }
-    
+
     public void setName(String name) {
         this.name = name;
     }
-    
+
     public String getAddress() {
-        return address;
+        return this.address;
     }
-    
+
     public void setAddress(String address) {
         this.address = address;
     }
-    
-    public List<BookCopy> getBookCopies() {
-        return bookCopies;
-    }
-    
-    public void setBookCopies(List<BookCopy> bookCopies) {
-        this.bookCopies = bookCopies;
-    }
 
-    public List<BookLoan> getBookLoans() {
-        return bookLoans;
-    }
-
-    public void setBookLoans(List<BookLoan> bookLoans) {
-        this.bookLoans = bookLoans;
-    }
-    
 }

@@ -1,62 +1,62 @@
 package com.smoothstack.december.orchestrationservice.entity;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Book {
-    
-    private int bookId;
+
+    private Long id;
     private String title;
-    private int publisherId;
-    private List<Author> authors;
     private Publisher publisher;
-    private List<Genre> genres;
-    
-    public int getBookId() {
-        return bookId;
+    private Set<Author> authors = new HashSet<>();
+    private Set<Genre> genres = new HashSet<>();
+
+    public Long getId() {
+        return this.id;
     }
-    
-    public void setBookId(int bookId) {
-        this.bookId = bookId;
+
+    public void setId(Long id) {
+        this.id = id;
     }
-    
+
     public String getTitle() {
-        return title;
+        return this.title;
     }
-    
+
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public int getPublisherId() {
-        return publisherId;
+    public Set<Author> getAuthors() {
+        return this.authors;
     }
 
-    public void setPublisherId(int publisherId) {
-        this.publisherId = publisherId;
-    }
-
-    public List<Author> getAuthors() {
-        return authors;
-    }
-    
-    public void setAuthors(List<Author> authors) {
+    public void setAuthors(Set<Author> authors) {
         this.authors = authors;
     }
 
     public Publisher getPublisher() {
-        return publisher;
+        return this.publisher;
     }
 
     public void setPublisher(Publisher publisher) {
         this.publisher = publisher;
     }
 
-    public List<Genre> getGenres() {
-        return genres;
+    public Set<Genre> getGenres() {
+        return this.genres;
     }
 
-    public void setGenres(List<Genre> genres) {
+    public void setGenres(Set<Genre> genres) {
         this.genres = genres;
     }
-    
+
+    public void addAuthor(Author author) {
+        this.authors.add(author);
+    }
+
+    public void addGenre(Genre genre) {
+        this.genres.add(genre);
+    }
+
 }
