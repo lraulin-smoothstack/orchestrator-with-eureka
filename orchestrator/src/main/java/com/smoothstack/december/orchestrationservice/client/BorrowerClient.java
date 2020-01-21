@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "borrower", url = "http://localhost:8081/lms/borrower")
+@FeignClient(name = "borrower", url = "http://localhost:8085")
 public interface BorrowerClient {
 
         @PostMapping("/checkout")
